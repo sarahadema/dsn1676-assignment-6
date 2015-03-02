@@ -92,8 +92,30 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
+  border-radius: 50%;
 
   background-color: orange;
+}
+
+@keyframes circle-bounce {
+  0%{
+    top: calc(50%-50px);
+    right:1em;
+  }
+
+  50% {
+    top: calc(50%-40px);
+    right:3em;
+  }
+
+  100% {
+    top: calc(50%-50px;);
+    right: 6em;
+  }
+}
+
+.js-circle-bounce {
+  animation: circle-bounce 1s linear;
 }
 
 .list {
