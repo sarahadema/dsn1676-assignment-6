@@ -93,29 +93,45 @@ div {
   top: calc(50% - 50px);
   width: 100px;
   border-radius: 50%;
+  overflow: hidden;
 
   background-color: orange;
 }
 
 @keyframes circle-bounce {
   0%{
-    top: calc(50%-50px);
+    top: calc(50% - 50px);
     right:1em;
   }
 
-  50% {
-    top: calc(50%-40px);
-    right:3em;
+  20%{
+    top: calc(50% - 65px);
+    right: 3em;
+  }
+
+  40% {
+    top: calc(50% - 40px);
+    right:5em;
+  }
+
+  60% {
+    top: calc(50% - 50px);
+    right:7em;
+  }
+
+  75% {
+    top: calc(50% - 55px);
+    right:9em;
   }
 
   100% {
-    top: calc(50%-50px;);
-    right: 6em;
+    top: calc(50% - 50px);
+    right: 11em;
   }
 }
 
 .js-circle-bounce {
-  animation: circle-bounce 1s linear;
+  animation: circle-bounce 2s linear;
 }
 
 .list {
