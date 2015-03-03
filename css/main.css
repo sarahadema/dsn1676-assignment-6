@@ -98,6 +98,38 @@ div {
   background-color: orange;
 }
 
+@-webkit-keyframes circle-bounce {
+  0%{
+    -webkit-top: calc(50% - 50px);
+    -webkit-right:1em;
+  }
+
+  20%{
+    -webkit-top: calc(50% - 65px);
+    -webkit-right: 3em;
+  }
+
+  40% {
+    -webkit-top: calc(50% - 40px);
+    -webkit-right:5em;
+  }
+
+  60% {
+    -webkit-top: calc(50% - 50px);
+    -webkit-right:7em;
+  }
+
+  75% {
+    -webkit-top: calc(50% - 55px);
+    -webkit-right:9em;
+  }
+
+  100% {
+    -webkit-top: calc(50% - 50px);
+    -webkit-right: 11em;
+  }
+}
+
 @keyframes circle-bounce {
   0%{
     top: calc(50% - 50px);
@@ -159,6 +191,16 @@ div {
   color: mediumpurple;
 }
 
+@-webkit-keyframes append-expand{
+  0%{
+    -webkit-max-height:0px;
+  }
+
+  100% {
+    -webkit-max-height: 10px;
+  }
+}
+
 @keyframes append-expand{
   0%{
     max-height:0px;
@@ -170,6 +212,6 @@ div {
 }
 
 .js-pull-down {
-  animation: append-expand 100ms ease-in;
+  animation: append-expand 300ms ease-in;
 }
 
