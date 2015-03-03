@@ -99,35 +99,17 @@ div {
 }
 
 @-webkit-keyframes circle-bounce {
-  0%{
-    -webkit-top: calc(50% - 50px);
-    -webkit-right:1em;
-  }
+  0% {-webkit-top: calc(50% - 50px);right:1em;}
 
-  20%{
-    -webkit-top: calc(50% - 65px);
-    -webkit-right: 3em;
-  }
+  20%{-webkit-top: calc(50% - 65px);right: 3em;}
 
-  40% {
-    -webkit-top: calc(50% - 40px);
-    -webkit-right:5em;
-  }
+  40% {-webkit-top: calc(50% - 40px);right:5em;}
 
-  60% {
-    -webkit-top: calc(50% - 50px);
-    -webkit-right:7em;
-  }
+  60% {-webkit-top: calc(50% - 50px);right:7em;}
 
-  75% {
-    -webkit-top: calc(50% - 55px);
-    -webkit-right:9em;
-  }
+  75% {-webkit-top: calc(50% - 55px);right:9em;}
 
-  100% {
-    -webkit-top: calc(50% - 50px);
-    -webkit-right: 11em;
-  }
+  100% {-webkit-top: calc(50% - 50px);right: 11em;}
 }
 
 @keyframes circle-bounce {
@@ -192,13 +174,9 @@ div {
 }
 
 @-webkit-keyframes append-expand{
-  0%{
-    -webkit-max-height:0px;
-  }
+  0% {-webkit-max-height:0px;}
 
-  100% {
-    -webkit-max-height: 10px;
-  }
+  100% {-webkit-max-height: 10px;}
 }
 
 @keyframes append-expand{
