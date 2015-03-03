@@ -146,6 +146,7 @@ div {
   border: 1px solid #ccc;
   overflow: hidden;
   overflow-y: auto;
+
 }
 
 .list li {
@@ -153,7 +154,22 @@ div {
 
   background-color: plum;
   border: 1px solid mediumpurple;
+  overflow: hidden;
 
   color: mediumpurple;
+}
+
+@keyframes append-expand{
+  0%{
+    max-height:0px;
+  }
+
+  100% {
+    max-height: 10px;
+  }
+}
+
+.js-pull-down {
+  animation: append-expand 100ms ease-in;
 }
 
